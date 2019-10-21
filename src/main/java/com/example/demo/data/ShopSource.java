@@ -53,7 +53,7 @@ public class ShopSource {
         Shop s6 = new Shop();
         s6.setId(6);
         s6.setName("Вільський Шлях,14");
-        s6.setTel("0985660818");
+        s6.setTel("0985751069");
         localBase.put(s6.getId(), s6);
 
         Shop s7 = new Shop();
