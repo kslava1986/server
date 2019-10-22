@@ -1,12 +1,10 @@
 package com.example.demo.data;
 
-import com.example.demo.Shop;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.demo.model.Shop;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Repository
@@ -61,6 +59,7 @@ public class ShopSource {
         s7.setName("Івана Мазепи,5");
         s7.setTel("0985660818");
         localBase.put(s7.getId(), s7);
+
 
     }
 

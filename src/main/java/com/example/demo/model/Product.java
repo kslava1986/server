@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -15,6 +15,12 @@ public class Product {   @Id
     public Product() {
     }
 
+    public Product(int id, String name, String description, float price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
 
     @Override
     public String toString() {
