@@ -4,10 +4,8 @@ import com.example.demo.model.Product;
 import com.example.demo.model.Shop;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 @Repository
 public class Storage {
     private Map<Long, List<Product>> products;
@@ -112,6 +110,15 @@ public class Storage {
 
     }
 
+    public Collection<Shop> findAllShops()
+    {
+        return shops.values();
+    }
+
+    public Collection<Product> findByShopId(long shopId)
+    {
+        return products.get(shopId);
+    }
 
 
 }
